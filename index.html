@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USD Enterprises - Tax Invoice</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; padding: 10px; background: #fff; }
+        .invoice { max-width: 800px; margin: 0 auto; border: 2px solid #000; }
+        .header { text-align: center; border-bottom: 4px solid #ff0000; padding: 15px 10px; }
+        .jay-mata { font-weight: bold; color: #1a237e; font-size: 14px; margin-bottom: 5px; }
+        .gst-title { color: #555; font-size: 14px; }
+        .usd-title { color: #ff0000; font-size: 36px; font-weight: bold; margin: 8px 0; }
+        .usd-logo { color: #0000ff; }
+        .specialist { color: #1a237e; font-weight: bold; font-size: 16px; }
+        .office { color: #1a237e; font-size: 12px; font-weight: bold; margin-top: 8px; line-height: 1.4; }
+        table { width: 100%; border-collapse: collapse; }
+        td, th { border: 1px solid #000; padding: 8px; font-size: 12px; vertical-align: top; }
+        .to-section { height: 120px; }
+        .product-header { background: #f2f2f2; font-weight: bold; text-align: center; }
+        .amount-col { text-align: right; }
+        .total-row td { font-weight: bold; }
+        .rupees-box { padding: 10px; border-top: 1px solid #000; border-bottom: 4px solid #ff0000; }
+        .bank-details { padding: 10px; font-size: 12px; }
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+    </style>
+</head>
+<body>
+    <div class="invoice">
+        <div class="header">
+            <div class="jay-mata">|| जय सीता माय ||</div>
+            <p class="gst-title">GST INVOICE</p>
+            <h1 class="usd-title">USD <span class="usd-logo">ENTERPRISES</span></h1>
+            <p class="specialist">DG SPARE PARTS SPECIALIST</p>
+            <p class="office">
+                OFFICE: R-1, Flat No. 401, Mount View Complex, Near Rangoli Garden Hotel,<br>
+                Dombivli-Badlapur Road, Palegaon, Ambernath (E) – 421501.
+            </p>
+        </div>
+
+        <table>
+            <tr>
+                <td rowspan="6" class="to-section">
+                    <strong>To,</strong><br><br><br><br>
+                    <strong>Mobile no:</strong> 8149793440 / 7823007881
+                </td>
+                <td width="20%"><strong>Invoice No</strong></td>
+                <td width="30%"><strong>Date:</strong></td>
+            </tr>
+            <tr>
+                <td><strong>State:</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Payment:</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Order No:</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Dispatch No:</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>L.R No</strong></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr class="product-header">
+                <td width="5%">NO.</td>
+                <td width="35%">Products</td>
+                <td width="12%">HSN/SAC</td>
+                <td width="10%">Quantity</td>
+                <td width="8%">Unit</td>
+                <td width="15%">Rate</td>
+                <td width="15%">Amount</td>
+            </tr>
+            <tr>
+                <td class="text-center">1</td>
+                <td>Terminal Strip Extra Heavi (P)</td>
+                <td class="text-center">85389000</td>
+                <td class="text-center">45</td>
+                <td class="text-center">Pes</td>
+                <td class="text-right">65.00</td>
+                <td class="text-right">2,925.00</td>
+            </tr>
+            <tr>
+                <td class="text-center">2</td>
+                <td>Terminal Strip Extra Heavi (N)</td>
+                <td class="text-center">85389000</td>
+                <td class="text-center">23</td>
+                <td class="text-center">Pes</td>
+                <td class="text-right">65.00</td>
+                <td class="text-right">1,495.00</td>
+            </tr>
+            <tr><td colspan="7" style="height: 180px;"></td></tr>
+            <tr class="total-row">
+                <td colspan="5" rowspan="6"></td>
+                <td>TOTAL</td>
+                <td class="text-right">4,420.00</td>
+            </tr>
+            <tr class="total-row">
+                <td>SGST 9%</td>
+                <td class="text-right">397.80</td>
+            </tr>
+            <tr class="total-row">
+                <td>CGST 9%</td>
+                <td class="text-right">397.80</td>
+            </tr>
+            <tr class="total-row">
+                <td>IGST 18%</td>
+                <td class="text-right">-</td>
+            </tr>
+            <tr class="total-row">
+                <td>ROUND OFF</td>
+                <td class="text-right">0.40</td>
+            </tr>
+            <tr class="total-row">
+                <td>GR TOTAL</td>
+                <td class="text-right">5,216.00</td>
+            </tr>
+        </table>
+
+        <div class="rupees-box">
+            <strong>RUPEES:</strong> Five Thousand Two Hundred Sixteen Only.
+            <strong style="float: right;">IN WORDS</strong>
+        </div>
+
+        <div class="bank-details">
+            <strong>Bank Details:</strong><br>
+            <strong>IFSC Code – KKBK0002040</strong> | <strong>Account no. 3047975102</strong> | <strong>Branch - Kalyan</strong>
+        </div>
+    </div>
+</body>
+</html>
